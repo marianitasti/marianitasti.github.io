@@ -66,11 +66,13 @@
                                     The code operates in the following manner:
                                         <ul>
                                             <li>locate CSV</li>
+					    <li>preprocess data if necessary</li>
                                             <li>build PySpark Application </li>
                                             <li>read csv into dataframe</li>
                                             <li>filter data by relevant information</li>
                                             <li>save data (using pandas library)</li>
                                         </ul>
+				    The above workflow is similar for Scripts related to both datasets
                                     </p>
 								</article>
 								<article>
@@ -90,6 +92,7 @@
                                             country which had the largest production volume in this country</li>
                                         <li><b>ranker_items_and_countries</b>: This script gives a ranking 
                                             of production volume of the average since 2000</li>
+					    <li><b>crop</b>: computes Min, Max, Trend, Recent Decade Trend, Trend since 2000, Recent Average.</li>
                                     </ul>
                                     </p>
 								</article>	
