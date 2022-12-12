@@ -75,6 +75,21 @@
 				    The above workflow is similar for Scripts related to both datasets.
                                     </p>
 								</article>
+				<article>
+						<header>
+							<h3>
+								Why Dataframes and not RDD:
+								
+							</h3>
+						</header>
+						<p>RDD is a distributed collection of data elements spread across many machines in the cluster. 
+							RDDs are a set of Java or Scala objects representing data while a DataFrame is a distributed collection of data organized into named columns. I
+							t is conceptually equal to a table in a relational database. Also DataFrame API is very easy to use. 
+							It is faster for exploratory analysis, creating aggregated statistics on large data sets and RDD API 
+							is slower to perform simple grouping and aggregation operations. 
+							We also used DataFrames because it organizes the data in the named column. DataFrames allow the Spark to manage schema.
+						</p>
+					</article>
 								<article>
 									<header>
 										<h2>Crop Production Code</h2>
