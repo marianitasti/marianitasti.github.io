@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Analysis of the relations between Climate Change and Crop Production</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Description</a></li>
+							<li><a href="data.html">Data</a></li>
+							<li class="active"><a href="code.html">Code</a></li>
+							<li><a href="results.html">Results</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/qQuatschMitSosse/CloudAndBigData" class="icon brands fa-github"><span class="label">Project on GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <!-- Posts -->
+                                <article>
+                                    <p>
+                                    All Code is executed with the following command: <br />
+                                    <code>
+                                        spark-submit filename.py
+                                    </code> <br />
+                                    If it is not working check installation requirements below and if necessary modify path.
+                                    </p></article>
+                                <article>
+									<header>
+										<h2>Climate Change Code</h2>
+									<p>
+                                    </header> 
+                                    The following computations can be made with our code (all of them PySpark Applications):
+                                        <ul>
+                                            <li><b>ClimateChangeContinents</b>: calculates the average Temperature Change for every continent, for each decade</li>
+                                            <li><b>ClimateChangeDecades</b>: calculates the average temperature change for the whole world 
+                                                (average over all given countries in our dataset) for each decade</li>
+                                            <li><b>ClimateChangeEachCountyEachYear</b>: calculatess the temperature Change for every year, of every country in our dataset</li>
+                                            <li><b>ClimateChangeErasmus</b>: calculates the temperature Change for every year for our 
+                                                homecountries (Germany, Portugal and Spain). This can be adapted to any countries you want by 
+                                                creating a dataframe per country you wish to include.</li>
+                                            <li><b>ClimateChangeWorldYears</b>: calculates the average temperature change of the  whole world for each year</li>
+                                        </ul>
+                                     
+                                    The code operates in the following manner:
+                                        <ul>
+                                            <li>locate CSV</li>
+                                            <li>build PySpark Application </li>
+                                            <li>read csv into dataframe</li>
+                                            <li>filter data by relevant information</li>
+                                            <li>save data (using pandas library)</li>
+                                        </ul>
+                                    </p>
+								</article>
+								<article>
+									<header>
+										<h2>Crop Production Code</h2>
+                                    <p>
+									</header>
+                                    The following computations can be made with our code:
+                                    <ul>
+                                        <li><b>averager_over_items_and_countries</b>: integrates over all the 
+                                            yields of all countries given in corresponding list</li>
+                                        <li><b>derivator_window_countries_items</b>: calculates the derivatives of the yield of the selected items and countries. 
+                                            That means it averages over 5 years around the respective year, thus the yield in the year itself 
+                                            and two before and after that year. The year value is subtracted 
+                                            such that it outputs the derivation of this year over the windows mean value</li>
+                                        <li><b>most_produced_item</b>: This script outputs the name of the item of the respective 
+                                            country which had the largest production volume in this country</li>
+                                        <li><b>ranker_items_and_countries</b>: This script gives a ranking 
+                                            of production volume of the average since 2000</li>
+                                    </ul>
+                                    </p>
+								</article>	
+								
+								<article>
+									<header>
+										<h2>
+											Installation Requirements
+										</h2>
+									</header>
+								</article>
+					
+
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Group</h3>
+							<p>Johann Jakob Kurzman, Lukas Rust, Maria Stickel, Bernardo Amado Pereira da Costa, Jorge Samboal Ugena</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">mariasti@ucm.es</a></p>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

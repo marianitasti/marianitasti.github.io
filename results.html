@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Analysis of the relations between Climate Change and Crop Production</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Description</a></li>
+							<li><a href="data.html">Data</a></li>
+							<li><a href="code.html">Code</a></li>
+                            <li class="active"><a href="results.html">Results</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/qQuatschMitSosse/CloudAndBigData" class="icon brands fa-github"><span class="label">Project on GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<h2>
+								Climate Change Results
+							</h2>
+							<div class="box alt">
+								<p>
+									The Climate Change data shows the expected results. 
+									In the folling we display the average Temperature Change for every continent decade-wise and in the following order:
+									Africa, America, SouthAmerica, Asia, Europe, Oceania.
+									All of those show an increasing temperatures over the past decades.
+								</p>
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/Africa.png" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/America.png" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/SouthAmerica.png" alt="" /></span></div>
+									<!-- Break -->
+									<div class="col-4"><span class="image fit"><img src="images/Asia.png" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/Europe.png"AverageDecade alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/Oceania.png" alt="" /></span></div>
+								</div>
+								<p>
+									<br />
+									Rather unexpected are the results for Antarctica:
+									<span class="image fit"><img src="images/Antarctica.png" alt="" /></span>
+								</p>
+								<p>
+									Firstly we can observe slightly increasing temperatures (although far not as significant
+									as on other continents) yet in the past decade we observe a decrease. This could be researched more extensively 
+									in future studies. <br />
+									Summed up in the same graphic we again observe a significant increase in temperature as expected:									
+								</p>
+								<span class="image fit"><img src="images/avg_area_x_decade.png" alt="" /></span>
+								<p>
+									Now joining the datasets by considering the average over all countries in decades:
+								</p>
+								<span class="image fit"><img src="images/AverageDecade.png" alt="" /></span>
+								<p>
+									Considering the past 30 years which are the ones where Climate Change has been observed the most:
+								</p>
+								<span class="image fit"><img src="images/Last30Years.png" alt="" /></span>
+								<p>
+									And over all years since 1961:
+								</p>
+								<span class="image fit"><img src="images/avg_x_year.png" alt="" /></span>
+							</div>
+							<h2>
+								Crop Production Results
+							</h2>
+							<p> As we can see in the most_produced.csv file, there’s an interesting pattern. Countries from South America such as Chile, 
+								Argentina and Brazil produce mainly tomatoes according to the “Major Trend” row.
+								European countries and USA are experts on producing cucumbers and 
+								gherkins according to the same row. (https://www.worldstopexports.com/top-cucumbers-exporting-countries/)
+								The production of tomatoes in South America can be explained by the weather. 
+								Tomato plants will grow in well-drained sites that receive full sun for the most of the day. 
+								The top 5 exports (by value!) of cucumber are USA, Spain, Mexico, Canada and Netherlands. 
+								Cucumbers are extremely susceptible to frost and 
+								cold damage; the soil should be at least 70ºF (21ºC) for germination.
+								This means that a country that has not a favorable climate needs to have the resources 
+								to produce this vegetable. 
+								That explains the presence of countries like C
+								anada, Netherlands and USA in the top 5 by value.
+								Of course that in certain times of the year (if not every year) the production wi
+								ll be located in stoves. </p> 
+								<p>
+								If we change just a line of code in the file most_produced_item.py to obtain, for example, which is the most produced 
+								product between meat and cereals we will observe that every country produce more cereals than meat according to the “Major Trend” row. 
+								That’s a bit surprising especially in countries like Brazil and Argentina 
+								which are largely known for their meat tradition.
+								However there’s a logical reason.
+								Cereal grain crops are grown in greater quantities and provide more food ene
+								rgy worldwide than any type of crop and are therefore staple crops.
+								Today, developing countries depend more on cereal grains for their nutritional needs 
+								than the developed world.</p> 
+								<p>
+								Looking at the averager.csv we can notice a massive growth in the crop production worldwide.
+								That can be explained by many factors, specially when analyzing developed countries 
+								like European and North America countries.
+								The development of producing techniques, the need of mass production, the population 
+								growth and the recent consume needs of society certainly had a lot of influence in this growth.
+								The derivative was mainly impressing in the transition of the 60s to the 70s.
+								After some research we were able to discover the cause of this growth. 
+								The green revolution began in the mid-20th century and consisted in the great increase in production of food grains. 
+								That resulted in large part from the introduction into developing countries of new, 
+								high-yielding varieties. For example, the average cereal yield has increased 175 percent since 1961. 
+								This means that today the world can produce almost three times as much cereal from a 
+								given area of land than it did in 1961. See image below:
+								</p> 
+								<span class="image fit"><img src="images/averager.png" alt="" /></span>
+								<p>
+								After visualizing the ranker.csv file we can notice that United Kingdom leads the Tomato production and also the Cucumber production and are followed by Ireland. 
+								Much of that mass production is for intern consumption due to the high taxes of importing to the UK. 
+								Of course that being a territory with monetary resources is a must to lead the ranking. See image below:</p> 
+								<span class="image fit"><img src="images/Ranker.png" alt="" /></span>
+								<p>
+								We also thought that would be interesting to compare the crop production of Germany, Spain 
+								and Portugal since our group contains people from those 3 countries. Germany leads the 
+								production of tomatoes and cucumbers, Portugal is 3rd in tomatoes production and 6th in 
+								the cucumber production. Spain is 4th in tomato production and 5th in cucumber production. 
+								We some similarities between the crop of Portugal and Spain that can be explained by similar climates, 
+								similar economies and similar context. See image below:
+								Footer. </p> 
+								<span class="image fit"><img src="images/RankerErasmus.png" alt="" /></span>
+							</p>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Group</h3>
+							<p>Johann Jakob Kurzman, Lukas Rust, Maria Stickel, Bernardo Amado Pereira da Costa, Jorge Samboal Ugena</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">mariasti@ucm.es</a></p>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
